@@ -3,9 +3,13 @@ import './Register.css';
 
 const Register = () => {
     return (
-        <div>
-            
+        <div className='container'>
+            <h3>
+                Register
+            </h3>
+
         </div>
+
     );
 };
 
