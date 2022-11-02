@@ -1,41 +1,117 @@
 import React from 'react';
 import './Adoption.css';
 import Card from '@mui/material/Card';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import { styled } from '@mui/material/styles';
+
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
+
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+}));
+
 
 
 
 const Adoption = () => {
     return (
-        <Container id="container" maxWidth="sm">
-            <Card id="card" sx={{ maxWidth: 345 }}>
-                {/* <CardMedia
+        <Container id="container" maxWidth="false">
+            <Grid id="grid" container spacing={1}>
+             
+                <Grid item xs={12}>
+                
+                    <Item id="item">
+                    <h3><b>Cat Section</b></h3>
+                    
+                        <Card id="card" sx={{ maxWidth: 345 }}>
+                            {/* <CardMedia
                     component="img"
                     alt="Corgi1"
                     height="140"
                     image="../Resources/Corgi1.jpg"
                 />
                 */}
-                <img src="../Resources/bulldog1.jpg"></img>
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        Lizard
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                </CardActions>
-            </Card>
+                            <img src="../Resources/bulldog1.jpg" alt=" "></img>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Pet
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Add</Button>
+                                <Button size="small">buy</Button>
+                            </CardActions>
+                        </Card>
+
+                        <h3><b>Dog Section</b></h3>
+                        <Card id="card" sx={{ maxWidth: 345 }}>
+                            {/* <CardMedia
+                    component="img"
+                    alt="Corgi1"
+                    height="140"
+                    image="../Resources/Corgi1.jpg"
+                />
+                */}
+                            <img src="../Resources/husky1.jpg" alt=" "></img>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Pet
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Share</Button>
+                                <Button size="small">Learn More</Button>
+                            </CardActions>
+                        </Card>
+                        <h3><b>Bird Section</b></h3>
+                        <Card id="card" sx={{ maxWidth: 345 }}>
+                            {/* <CardMedia
+                    component="img"
+                    alt="Corgi1"
+                    height="140"
+                    image="../Resources/Corgi1.jpg"
+                />
+                */}
+                            <img src="../Resources/bulldog1.jpg" alt=" "></img>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Pet
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Share</Button>
+                                <Button size="small">Learn More</Button>
+                            </CardActions>
+                        </Card>
+
+
+
+
+                    </Item>
+                </Grid>
+
+            </Grid>
         </Container>
 
 
