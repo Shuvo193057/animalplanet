@@ -20,7 +20,11 @@
     justify-content: center;
 
 }
-
+.links{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
 #reg {
     background-color:black;
     color:rgb(161, 159, 159);

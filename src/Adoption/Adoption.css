@@ -1,21 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#container{
-    
-  
-}
-#card{
-    display: inline-block;
 
-    
+#container {
+    margin-top: 100px;
 }
-#grid{
-    background-color: blue;
-    
+
+#card {
+    display: inline-block;
+    margin: 10px;
+
+}
+
+#item {
+    height: auto;
 }
 #item{
-    
+    height: 100%;
 }
