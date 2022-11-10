@@ -12,6 +12,9 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import BullDog from '../Resources/bulldog1.jpg';
 import Corgi from '../Resources/Corgi1.jpg';
+import Cat1 from '../Resources/cat1.jpg';
+import Cat2 from '../Resources/cat2.jpg';
+import Cat3 from '../Resources/cat3.jpg';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -37,9 +40,9 @@ const Adoption = () => {
                         <Card id="card" sx={{ maxWidth: 345 }}>
                             <CardMedia id="pet-img"
                                 component="img"
-                                alt="Corgi1"
+                                alt="cat1"
                                 height="140"
-                                image={BullDog}
+                                image={Cat1}
                             />
                             <CardContent>
                                 <label>Pet</label>
@@ -56,9 +59,9 @@ const Adoption = () => {
                         <Card id="card" sx={{ maxWidth: 345 }}>
                             <CardMedia id="pet-img"
                                 component="img"
-                                alt="Corgi1"
+                                alt="cat2"
                                 height="140"
-                                image={BullDog}
+                                image={Cat2}
                             />
                             <CardContent>
                                 <label>Pet</label>
@@ -75,9 +78,9 @@ const Adoption = () => {
                         <Card id="card" sx={{ maxWidth: 345 }}>
                             <CardMedia id="pet-img"
                                 component="img"
-                                alt="Corgi1"
+                                alt="cat3"
                                 height="140"
-                                image={BullDog}
+                                image={Cat3}
                             />
                             <CardContent>
                                 <label>Pet</label>
@@ -174,10 +177,48 @@ const Adoption = () => {
                                 <Button size="small">Learn More</Button>
                             </CardActions>
                         </Card>
-
-
-
-
+                        <Card id="card" sx={{ maxWidth: 345 }}>
+                            <CardMedia
+                                component="img"
+                                alt="Corgi1"
+                                height="140"
+                                image={Corgi}
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Pet
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Share</Button>
+                                <Button size="small">Learn More</Button>
+                            </CardActions>
+                        </Card>
+                        <Card id="card" sx={{ maxWidth: 345 }}>
+                            <CardMedia
+                                component="img"
+                                alt="Corgi1"
+                                height="140"
+                                image={Corgi}
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Pet
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Lizards are a widespread group of squamate reptiles, with over 6,000
+                                    species, ranging across all continents except Antarctica
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Share</Button>
+                                <Button size="small">Learn More</Button>
+                            </CardActions>
+                        </Card>
                     </Item>
                 </Grid>
 

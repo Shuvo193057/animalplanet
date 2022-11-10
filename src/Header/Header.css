@@ -1,4 +1,4 @@
-* {
+*  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,26 +19,4 @@
     text-align: center;
     justify-content: center;
 
-}
-.links{
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-#reg {
-    background-color:black;
-    color:rgb(161, 159, 159);
-    border: none;
-    border-radius: 30px;
-    width: 100px;
-    height: 40px;
-    /* display:flex; */
-    /* position: right; */
-    align-items: center;
-    text-align: center;
-    transform: translate(400%, 50%);
-}
-#reg:hover{
-    color: white;
-    transition: 0.5s;
 }
