@@ -23,14 +23,15 @@ const Header = () => {
                     </Nav>
                 </Container>
             </Navbar>
-   {/* <div>
+           
+            {/* <div>
                 <body style="background-color:#1c87c9;">
 
                 </body>
             </div> */}
         </div>
 
-);
+    );
 };
 
-export default Header;
+export default Header;
