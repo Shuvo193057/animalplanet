@@ -173,8 +173,8 @@ const Adoption = () => {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small">Add</Button>
+                                <Button size="small">Buy</Button>
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
@@ -194,8 +194,8 @@ const Adoption = () => {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small">Add</Button>
+                                <Button size="small">Buy</Button>
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
@@ -215,8 +215,8 @@ const Adoption = () => {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small">Add</Button>
+                                <Button size="small">Buy</Button>
                             </CardActions>
                         </Card>
                     </Item>
