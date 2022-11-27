@@ -2,43 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#navbar {
-    border-radius: 50px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
+  }
+  
+  #navbar {
+    font-family: "Lemon Milk";
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 10px;
+    color: rgb(73, 70, 70);
     position: fixed;
-    transform: translate(100%, 0%);
-    margin-top: 10px;
-
-}
-
-#contain {
-    text-align: center;
-    justify-content: center;
-
-}
-.links{
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-#reg {
-    background-color:black;
-    color:rgb(161, 159, 159);
-    border: none;
-    border-radius: 30px;
-    width: 100px;
-    height: 40px;
-    /* display:flex; */
-    /* position: right; */
+    width: 100%;
+    top: 0;
+    z-index: 100;
     align-items: center;
     text-align: center;
-    transform: translate(400%, 50%);
-}
-#reg:hover{
+  }
+  #logo {
     color: white;
-    transition: 0.5s;
-}
+  }
+  
+  .links {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
