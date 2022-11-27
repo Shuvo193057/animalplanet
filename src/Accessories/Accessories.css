@@ -1,1 +1,23 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    margin-top: 100px;
+}
+
+#card {
+    display: inline-block;
+    margin: 10px;
+
+}
+
+#item {
+    height: auto;
+}
+#item{
+    height: 100%;
+}

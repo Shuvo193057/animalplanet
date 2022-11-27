@@ -12,7 +12,9 @@ const Header = () => {
         <div>
             <Navbar id="navbar" bg="dark" variant="dark">
                 <Container id="contain">
-                    {/* <Navbar.Brand href="#home">Home</Navbar.Brand> */}
+                    <div id="logo">
+                        <h3>Animal Planet</h3>
+                    </div>
                     <Nav id="navigation">
                         <NavLink className="links" to="/adoption">Adoption</NavLink>
                         <NavLink className="links" to="/food">Food</NavLink>
@@ -33,4 +35,4 @@ const Header = () => {
 );
 };
 
-export default Header;
+export default Header;
