@@ -19,6 +19,7 @@
   }
   #logo {
     color: white;
+    font-size: 30px;
   }
   
   .links {
@@ -26,4 +27,5 @@
     color: white;
     margin: 10px;
     padding: 10px;
+    
   }

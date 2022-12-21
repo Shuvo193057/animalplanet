@@ -13,9 +13,10 @@ const Header = () => {
             <Navbar id="navbar" bg="dark" variant="dark">
                 <Container id="contain">
                     <div id="logo">
-                        <h3>Animal Planet</h3>
+                    <NavLink className="links" to="/">Animal Planet</NavLink>
                     </div>
                     <Nav id="navigation">
+                    
                         <NavLink className="links" to="/adoption">Adoption</NavLink>
                         <NavLink className="links" to="/food">Food</NavLink>
                         <NavLink className="links" to="/accessories">Accessories</NavLink>

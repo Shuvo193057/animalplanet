@@ -3,20 +3,21 @@ import './Login.css';
 
 const Login = () => {
     return (
-        <div className="container">
-            <h1> Sign UP </h1>
-            <div className="inputgroup">
-                <p>Username</p>
-                <input placeholder="Enter your username"></input>
-                <p>Password</p>
-                <input placeholder="Enter your password"></input>
-            </div>
-            <div className="Submit">
-                <button> Submit </button>
-            </div>
+        <form>
+    
+        <h3 id="log">Login</h3>
 
+        <label for="username">Username</label>
+        <input type="text" id="username"></input>
 
-        </div>
+        <label for="password">Password</label>
+        <input type="password" id="password"></input>
+        
+
+        <button id= "submit">Submit</button>
+    
+       
+    </form>
     );
 };
 
