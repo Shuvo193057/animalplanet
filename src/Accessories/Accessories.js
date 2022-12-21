@@ -1,231 +1,49 @@
 import React from 'react';
 import './Accessories.css';
-import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import CardActions from '@mui/material/CardActions';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import BullDog from '../Resources/bulldog1.jpg';
-import Corgi from '../Resources/Corgi1.jpg';
-import Cat1 from '../Resources/cat1.jpg';
-import Cat2 from '../Resources/cat2.jpg';
-import Cat3 from '../Resources/cat3.jpg';
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
-
-
+import Data from '../data.json';
 
 
 const Accessories = () => {
+
+    function DataCard(props) {
+        const { headline, title, desc } = props;
+        return (
+            <div id='totalCard'>
+                <div id='headCard'>
+                    <h2 id="headline">{headline}</h2>
+                </div>
+                <div id="card">
+                    <div id="content">
+                        <h3 id="cardTitle">{title}</h3>
+                        <p id="cardDesc">{desc}</p>
+                        <Button id='btnCart'>Add Cart</Button>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     return (
-        <Container id="container" maxWidth="false">
-            <Grid id="grid" container spacing={1}>
-
-                <Grid item xs={12}>
-
-                    <Item id="item">
-                        <h3><b>Pet Toys</b></h3>
-
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia id="pet-img"
-                                component="img"
-                                alt="cat1"
-                                height="140"
-                                image={Cat1}
-                            />
-                            <CardContent>
-                                <label>Pet</label>
-                                <p>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </p>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
-                            </CardActions>
-                        </Card>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia id="pet-img"
-                                component="img"
-                                alt="cat2"
-                                height="140"
-                                image={Cat2}
-                            />
-                            <CardContent>
-                                <label>Pet</label>
-                                <p>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </p>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
-                            </CardActions>
-                        </Card>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia id="pet-img"
-                                component="img"
-                                alt="cat3"
-                                height="140"
-                                image={Cat3}
-                            />
-                            <CardContent>
-                                <label>Pet</label>
-                                <p>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </p>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
-                            </CardActions>
-                        </Card>
-
-                        <h3><b>Pet Clothing</b></h3>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia
-                                component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={Corgi}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Pet
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </Typography>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
-                            </CardActions>
-                        </Card>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia id="pet-img"
-                                component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={BullDog}
-                            />
-                            <CardContent>
-                                <label>Pet</label>
-                                <p>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </p>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
-                            </CardActions>
-                        </Card>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia id="pet-img"
-                                component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={BullDog}
-                            />
-                            <CardContent>
-                                <label>Pet</label>
-                                <p>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </p>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
-                            </CardActions>
-                        </Card>
-                        <h3><b>Others Items</b></h3>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia
-                                component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={Corgi}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Pet
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </Typography>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
-                            </CardActions>
-                        </Card>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia
-                                component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={Corgi}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Pet
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </Typography>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
-                            </CardActions>
-                        </Card>
-                        <Card id="card" sx={{ maxWidth: 345 }}>
-                            <CardMedia
-                                component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={Corgi}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Pet
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
-                                </Typography>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
-                            </CardActions>
-                        </Card>
-                    </Item>
-                </Grid>
-
-            </Grid>
-        </Container>
-
-
+        <div id="container" maxWidth="false">
+            <div id='CatSec'>
+                <div id='section'>
+                    <h2>Cat part</h2>
+                </div>
+                <DataCard title={Data[0].titles} desc={Data[0].desc}></DataCard>
+                <DataCard title={Data[1].titles} desc={Data[1].desc}></DataCard>
+                <DataCard title={Data[2].titles} desc={Data[2].desc}></DataCard>
+                <DataCard title={Data[3].titles} desc={Data[3].desc}></DataCard>
+                <DataCard title={Data[3].titles} desc={Data[3].desc}></DataCard>
+            </div>
+            <div id='section'>
+                <h2>Dog part</h2>
+                <DataCard title={Data[0].titles} desc={Data[0].desc}></DataCard>
+                <DataCard title={Data[1].titles} desc={Data[1].desc}></DataCard>
+                <DataCard title={Data[2].titles} desc={Data[2].desc}></DataCard>
+                <DataCard title={Data[2].titles} desc={Data[2].desc}></DataCard>
+            </div>
+        </div>
     );
 };
 
