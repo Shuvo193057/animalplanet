@@ -12,9 +12,14 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import BullDog from '../Resources/bulldog1.jpg';
 import Corgi from '../Resources/Corgi1.jpg';
+import German1 from '../Resources/german1.jpg';
+import German from '../Resources/german3.jpg';
 import Cat1 from '../Resources/cat1.jpg';
 import Cat2 from '../Resources/cat2.jpg';
 import Cat3 from '../Resources/cat3.jpg';
+import Bird1 from '../Resources/bird1.jpg';
+
+
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -52,8 +57,14 @@ const Adoption = () => {
                                 </p>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
+                                <button
+                                    name="Add to cart"
+                                    className="product__btn"
+                                    onClick={handleAddToCart}
+                                >
+                                    Quick add
+                                </button>
+
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
@@ -72,7 +83,7 @@ const Adoption = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
+
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
@@ -91,7 +102,7 @@ const Adoption = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
+
                             </CardActions>
                         </Card>
 
@@ -99,9 +110,9 @@ const Adoption = () => {
                         <Card id="card" sx={{ maxWidth: 345 }}>
                             <CardMedia
                                 component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={Corgi}
+                                alt="german1"
+                                height="295"
+                                image={German1}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -113,8 +124,8 @@ const Adoption = () => {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <Button size="small">Add</Button>
+
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
@@ -133,15 +144,15 @@ const Adoption = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
+
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
                             <CardMedia id="pet-img"
                                 component="img"
-                                alt="Corgi1"
+                                alt="german3"
                                 height="140"
-                                image={BullDog}
+                                image={German}
                             />
                             <CardContent>
                                 <label>Pet</label>
@@ -152,7 +163,7 @@ const Adoption = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size="small">Add</Button>
-                                <Button size="small">buy</Button>
+
                             </CardActions>
                         </Card>
                         <h3><b>Bird Section</b></h3>
@@ -174,7 +185,7 @@ const Adoption = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size="small">Add</Button>
-                                <Button size="small">Buy</Button>
+
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
@@ -195,15 +206,15 @@ const Adoption = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size="small">Add</Button>
-                                <Button size="small">Buy</Button>
+
                             </CardActions>
                         </Card>
                         <Card id="card" sx={{ maxWidth: 345 }}>
                             <CardMedia
                                 component="img"
-                                alt="Corgi1"
-                                height="140"
-                                image={Corgi}
+                                alt="bird1"
+                                height="390"
+                                image={Bird1}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -216,7 +227,7 @@ const Adoption = () => {
                             </CardContent>
                             <CardActions>
                                 <Button size="small">Add</Button>
-                                <Button size="small">Buy</Button>
+
                             </CardActions>
                         </Card>
                     </Item>
