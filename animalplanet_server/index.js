@@ -41,18 +41,18 @@ MongoClient.connect(url, function(err, db) {
     });
 });
 
-// MongoClient.connect(url, function(err, db) {
-//     if (err) throw err;
-//     let dbo = db.db("food");
-//     dbo.collection("food").find({}).toArray(function(err, result) {
-//         if (err) throw err;
-//         // console.log(result);
-//         app.get('/food',(req,res)=>{
-//             res.send(result)
-//         })
-//         db.close();
-//     });
-// });
+MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    let dbo = db.db("animalplanet");
+    dbo.collection("adoption").find({}).toArray(function(err, result) {
+        if (err) throw err;
+        // console.log(result);
+        app.get('/adoption',(req,res)=>{
+            res.send(result)
+        })
+        db.close();
+    });
+});
 
 
 // const Storage = multer.diskStorage({
