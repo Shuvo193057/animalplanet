@@ -12,7 +12,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import BullDog from '../Resources/bulldog1.jpg';
 import Corgi from '../Resources/Corgi1.jpg';
-import German1 from '../Resources/german1.jpg';
 import German from '../Resources/german3.jpg';
 import Cat1 from '../Resources/cat1.jpg';
 import Cat2 from '../Resources/cat2.jpg';
@@ -60,7 +59,7 @@ const Adoption = () => {
                                 <button
                                     name="Add to cart"
                                     className="product__btn"
-                                    onClick={handleAddToCart}
+                                   
                                 >
                                     Quick add
                                 </button>
@@ -112,7 +111,7 @@ const Adoption = () => {
                                 component="img"
                                 alt="german1"
                                 height="295"
-                                image={German1}
+                                image=""
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
