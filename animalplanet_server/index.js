@@ -41,6 +41,20 @@ MongoClient.connect(url, function(err, db) {
     });
 });
 
+
+MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    let dbo = db.db("animalplanet");
+    dbo.collection("accessories").find({}).toArray(function(err, result) {
+        if (err) throw err;
+        // console.log(result);
+        app.get('/accessories',(req,res)=>{
+            res.send(result)
+        })
+        db.close();
+    });
+});
+
 // MongoClient.connect(url, function(err, db) {
 //     if (err) throw err;
 //     let dbo = db.db("food");

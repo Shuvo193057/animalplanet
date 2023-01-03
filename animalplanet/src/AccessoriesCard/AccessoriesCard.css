@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cards{
+    display: table-cell;
+    justify-items: center;
+    vertical-align: middle;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: auto; 
+    border-radius: 15px;
+    left: 0%;
+   
+} 
+#trainname{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+#cards:hover{
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+#image_box img{
+    width: 200px;
+    height: 130px;
+}
+#card-btn{
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(0, 130, 237);
+    color: white;
+    border-radius: 5px;
+}
