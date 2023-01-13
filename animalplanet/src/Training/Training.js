@@ -22,7 +22,6 @@ const Training = ({ handleClick }) => {
         <div id="container">
             <div id='cart-sec'>
                 {
-
                     sdata.map((item) => (
                         <Cards key={item.id} item={item} handleClick={handleClick} />
                     ))}
