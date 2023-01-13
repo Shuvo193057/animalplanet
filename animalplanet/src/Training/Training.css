@@ -5,19 +5,18 @@
 }
 #cart-sec{
   width: 1050px;
-  height: 800px;
-   margin: 50px;
+  height: 100%;
+  margin: 50px;
   display: grid;
   position: relative;
-  top: -4rem; 
+  top: 4rem; 
   left: 12rem;
   grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: auto;
-  background-color: rgb(16, 186, 198);
+  background-color: rgb(255, 253, 143);
   border-radius: 10px;
-  justify-content: center;
-
- 
+  justify-content:space-evenly;
+ padding-left: 3rem;
   
   
 }

@@ -8,13 +8,12 @@
     justify-items: center;
     vertical-align: middle;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 250px;
     height: auto;
     padding: 20px;
-    padding-bottom: 10px;
-    background-color: rgb(213, 32, 32);
-    margin: 1rem !important;
+    background-color: rgb(255, 255, 255);
+    margin: auto; 
     border-radius: 15px;
     left: 0%;
    
@@ -41,5 +40,5 @@
     font-weight: bold;
     background-color: rgb(0, 130, 237);
     color: white;
-    border-radius: 5px;
+    border-radius: 5px;
 }

@@ -45,3 +45,7 @@
     transition: 0.3s;
   
   }
+  #outlined-logemail,
+  #outlined-logpass{
+    background-color: #ffffff;
+  }

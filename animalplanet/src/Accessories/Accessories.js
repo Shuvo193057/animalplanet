@@ -1,49 +1,35 @@
-import React from 'react';
-import './Accessories.css';
-import Button from '@mui/material/Button';
-import list from '../data.json';
+import React, { useEffect, useState } from 'react';
+import AccessoriesCard from '../AccessoriesCard/AccessoriesCard';
 import Cards from '../Cards/Cards';
+import './Accessories.css';
 
 
 const Accessories = ({ handleClick }) => {
+    const [accdata, setaccdata] = useState([]);
+    const getdetails = async () => {
+        const response = await fetch('http://localhost:5000/accessories');
+        const data = await response.json();
+        setaccdata(data)
 
-    // function DataCard(props) {
-    //     const { headline, title, desc } = props;
-    //     return (
-    //         <div id='totalCard'>
-    //             <div id='headCard'>
-    //                 <h2 id="headline">{headline}</h2>
-    //             </div>
-    //             <div id="card">
-    //                 <div id="content">
-    //                     <h3 id="cardTitle">{title}</h3>
-    //                     <p id="cardDesc">{desc}</p>
-    //                     <Button id='btnCart'>Add Cart</Button>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     )
-    // }
 
+
+    }
+    useEffect(() => {
+        getdetails()
+    }, [])
+
+    // setsdata(data);
     return (
         <div id="container">
-            <div id='section'>
-                <h2>Cat part</h2>
-            </div>
-            <div id='cart-sec'>
-
+            <div id='acce-sec'>
                 {
-                    list.map((item) => (
-                        <Cards key={item.id} item={item} handleClick={handleClick} />
+                    accdata.map((item) => (
+                        <AccessoriesCard key={item.id} item={item} handleClick={handleClick} />
                     ))}
-            </div>
-
-            <div id='section'>
-                <h2>Dog part</h2>
-                
             </div>
         </div>
     );
+
 };
 
 export default Accessories;

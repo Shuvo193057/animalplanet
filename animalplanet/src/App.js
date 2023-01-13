@@ -26,6 +26,7 @@ function App() {
     setCart([...cart, item]);
     console.log(cart);
   };
+  console.log(cart)
 
   const handleChange = (item, d) => {
     const ind = cart.indexOf(item);
@@ -56,7 +57,7 @@ function App() {
       <Router>
         <Header Cart={cart}></Header>
         <Routes>
-          <Route exact path="/Accessories" element={<Accessories />} />
+          <Route exact path="/Accessories" element={<Accessories handleClick={handleClick} />} />
           <Route exact path="/Food" element={<Food />} />
           <Route exact path='/Adoption' element={<Adoption />} />
           <Route exact path='/Medicare' element={<Medicare />} />
@@ -64,7 +65,7 @@ function App() {
           <Route exact path='/Login' element={<Login />} />
           {/* <Route exact path='/index' element={<indexe/>} /> */}
           <Route exact path='/Register' element={<Register />} />
-          <Route exact path='/AddCart' element={<AddCart />} />
+          <Route exact path='/AddCart' element={<AddCart cart={cart} />} />
           <Route exact path='/' element={<Home />} />
         </Routes>
       </Router>

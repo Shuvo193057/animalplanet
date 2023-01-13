@@ -21,30 +21,30 @@ const AddCart = ({ cart, setCart, handleChange }) => {
         handlePrice();
     })
     return (
-        <article>
+        <article className=' mt-5 pt-5'>
 
             {cart.map((item) => (
                 <div id='cart_box' key={item.id}>
                     <div id='cart_img'>
-                        <img src={item.img} alt=""></img>
-                        <p>{item.title}</p>
+                        <img src={item.Image} alt=""></img>
+                        <p>{item.Name}</p>
                     </div>
                     {/* <div>
                         <button onClick={() => handleChange(item, 1)}>+</button>
                         <button>{item.amount}</button>
                         <button onClick={() => handleChange(item, -1)}>-</button>
                     </div> */}
-                    <div>
+                    {/* <div>
                         <span>{item.price}</span>
                         <button onClick={() => handleRemove(item.id)}>Remove</button>
-                    </div>
+                    </div> */}
                 </div>
-            ))};
+            ))}
 
-            <div id='total'>
+            {/* <div id='total'>
                 <span>Total price of cart</span>
                 <span>TK - {price}</span>
-            </div>
+            </div> */}
         </article>
     );
 };
