@@ -8,12 +8,13 @@
     justify-items: center;
     vertical-align: middle;
     align-items: center;
-    position: relative;
+    position: absolute;
     width: 250px;
     height: auto;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
-    margin: auto; 
+    padding-bottom: 10px;
+    background-color: rgb(213, 32, 32);
+    margin: 1rem !important;
     border-radius: 15px;
     left: 0%;
    

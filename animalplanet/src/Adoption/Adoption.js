@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
+<<<<<<< HEAD
 import Adoptions from "../AdoptionCard/AdoptionCard"
+=======
+import Adoptions from "../AdoptionCard/AdoptionCard";
+>>>>>>> shuvo
 import './Adoption.css';
 
 
@@ -20,7 +24,11 @@ const Adoption = ({ handleClick }) => {
     // setsdata(data);
     return (
         <div id="container">
+<<<<<<< HEAD
             <div id='cart-sec'>
+=======
+            <div id='adop-sec'>
+>>>>>>> shuvo
                 {
 
                     sd.map((item) => (
@@ -32,4 +40,4 @@ const Adoption = ({ handleClick }) => {
 
 };
 
-export default Adoption;
+export default Adoption;

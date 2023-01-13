@@ -7,9 +7,9 @@ const fs = require("fs-extra");
 const multer = require("multer");
 const path = require('path');
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
-    res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
 })
@@ -19,28 +19,41 @@ const password = process.env.password;
 console.log(username)
 console.log(password)
 
-const url = "mongodb+srv://"+username+":"+password+"@cluster0.n4dgkrq.mongodb.net/?retryWrites=true&w=majority";
+const url = "mongodb+srv://" + username + ":" + password + "@cluster0.n4dgkrq.mongodb.net/?retryWrites=true&w=majority";
 app.use(express.static(path.join(__dirname, '/')));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/',(req,res)=>{
-    res.sendFile(__dirname+'/index.html')
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html')
 })
 
-MongoClient.connect(url, function(err, db) {
+MongoClient.connect(url, function (err, db) {
     if (err) throw err;
     let dbo = db.db("animalplanet");
-    dbo.collection("training").find({}).toArray(function(err, result) {
+    dbo.collection("training").find({}).toArray(function (err, result) {
         if (err) throw err;
         // console.log(result);
-        app.get('/trainning',(req,res)=>{
+        app.get('/trainning', (req, res) => {
+            res.send(result)
+        })
+        db.close();
+    });
+});
+MongoClient.connect(url, function (err, db) {
+    if (err) throw err;
+    let dbo = db.db("animalplanet");
+    dbo.collection("accessories").find({}).toArray(function (err, result) {
+        if (err) throw err;
+        // console.log(result);
+        app.get('/accessories', (req, res) => {
             res.send(result)
         })
         db.close();
     });
 });
 
+<<<<<<< HEAD
 
 
 MongoClient.connect(url, function(err, db) {
@@ -51,13 +64,25 @@ MongoClient.connect(url, function(err, db) {
         // console.log(result);
         app.get('/accessories',(req,res)=>{
 
+=======
+MongoClient.connect(url, function (err, db) {
+    if (err) throw err;
+    let dbo = db.db("animalplanet");
+    dbo.collection("food").find({}).toArray(function (err, result) {
+        if (err) throw err;
+        // console.log(result);
+        app.get('/food', (req, res) => {
+>>>>>>> shuvo
             res.send(result)
         })
         db.close();
     });
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> shuvo
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     let dbo = db.db("animalplanet");
@@ -68,9 +93,14 @@ MongoClient.connect(url, function(err, db) {
             res.send(result)
         })
         db.close();
+<<<<<<< HEAD
     });
 });
 
+=======
+    });
+});
+>>>>>>> shuvo
 // MongoClient.connect(url, function(err, db) {
 //     if (err) throw err;
 //     let dbo = db.db("food");
@@ -103,7 +133,7 @@ MongoClient.connect(url, function(err, db) {
 //         }else{
 //             cb(null,fileName+'.jpg');
 //         }
-        
+
 //     }
 // })
 // const upload = multer({
@@ -163,7 +193,7 @@ MongoClient.connect(url, function(err, db) {
 //             ress.sendFile(__dirname+'/index.html');
 //         })
 //     })
-    
+
 // });
 
 app.listen(5000);
